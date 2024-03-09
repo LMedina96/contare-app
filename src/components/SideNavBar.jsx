@@ -1,13 +1,7 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { Icon } from '@iconify/react';
 
-const SideNavBar = () => {
-
-    const [itemSelected, setItemSelected] = useState(0)
-
-    const handleItemSelected = (index) => {
-        setItemSelected(index)
-    }
+const SideNavBar = ({ handleView, viewToShow }) => {
 
     const listItem = [
         'carbon:dashboard',
@@ -24,10 +18,10 @@ const SideNavBar = () => {
                             <button
                                 className={
                                     `p-4 hover:bg-gray-200 active:bg-gray-300 
-                                    ${itemSelected === index ? 'bg-gray-300' : ''} 
+                                    ${viewToShow === index ? 'bg-gray-300' : ''} 
                                     ${index === 0 ? 'rounded-t-full' : index === 2 ? 'rounded-b-full' : ''}`
                                 }
-                                onClick={() => handleItemSelected(index)}
+                                onClick={() => handleView(index)}
                             >
                                 <Icon icon={item} width="24" height="24" />
                             </button>
