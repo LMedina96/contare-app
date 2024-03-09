@@ -14,20 +14,21 @@ function App() {
   }
 
   return (
-    <>
+    <section className="grid grid-cols-12 p-8">
+      <div className="col-span-1"></div>
       <SideNavBar
         handleView={handleView}
         viewToShow={viewToShow}
       />
 
-      <section className="px-32 py-16">
+      <section className="col-span-11">
         {
           viewToShow === 0 ? (<Dashboard />)
             : viewToShow === 1 ? (<Incomes />)
               : (<Payments />)
         }
       </section>
-    </>
+    </section>
   )
 }
 

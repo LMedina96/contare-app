@@ -1,10 +1,11 @@
 import React from 'react'
+import DashboardHeader from '../components/DashboardHeader'
 
 const Dashboard = () => {
   return (
-    <div>
-      <h1>Dashboard</h1>
-    </div>
+    <section className='grid grid-cols-4'>
+      <DashboardHeader />
+    </section>
   )
 }
 
