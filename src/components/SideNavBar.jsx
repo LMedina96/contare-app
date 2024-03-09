@@ -10,7 +10,7 @@ const SideNavBar = ({ handleView, viewToShow }) => {
     ]
 
     return (
-        <div className="fixed left-4 top-1/2 transform -translate-y-1/2 border border-slate-600 rounded-full shadow-xl">
+        <div className="fixed left-8 top-1/2 transform -translate-y-1/2 border border-slate-600 rounded-full shadow-xl">
             <ul>
                 {
                     listItem.map((item, index) => (

@@ -10,11 +10,10 @@ function App() {
 
   const handleView = (menuItemSelected) => {
     setViewToShow(menuItemSelected)
-    console.log(viewToShow)
   }
 
   return (
-    <section className="grid grid-cols-12 p-8">
+    <section className="grid grid-cols-12 p-4 ps-0">
       <div className="col-span-1"></div>
       <SideNavBar
         handleView={handleView}
