@@ -21,13 +21,13 @@ const Barchart = () => {
                 labels: ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'],
                 datasets: [{
                     type: 'bar',
-                    label: 'Bar Dataset',
+                    label: 'Payments',
                     data: [10, 20, 30, 40, 10, 20, 30, 40, 10, 20, 30, 40],
                     borderColor: 'rgb(255, 99, 132)',
                     backgroundColor: 'rgba(255, 99, 132, 0.2)'
                 }, {
                     type: 'line',
-                    label: 'Line Dataset',
+                    label: 'Earns',
                     data: [40, 10, 20, 40, 10, 20, 40, 10, 20, 40, 10, 20],
                     fill: false,
                     borderColor: 'rgb(54, 162, 235)'
@@ -45,7 +45,7 @@ const Barchart = () => {
 
     return (
         <div>
-            <canvas id="myChart" height='100'></canvas>
+            <canvas id="myChart" height='120'></canvas>
         </div>
     )
 }

@@ -8,7 +8,7 @@ const DashboardHeader = () => {
                 <p className='text-2xl font-medium'>$500,000.00</p>
             </div>
 
-            <div className='col-span-4 xl:col-span-1 border-2 rounded-2xl p-4 m-1'>
+            <div className='col-span-4 xl:col-span-1 border-2 rounded-2xl p-4 m-1 text-end'>
                 <h2 className='text-3xl font-semibold'>This Month</h2>
                 <p className='text-2xl font-medium'>+ $25,350.00</p>
             </div>
