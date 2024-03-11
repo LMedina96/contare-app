@@ -13,20 +13,21 @@ function App() {
   }
 
   return (
-    <section className="grid grid-cols-12 p-4 ps-0">
-      <div className="col-span-1"></div>
-      <SideNavBar
-        handleView={handleView}
-        viewToShow={viewToShow}
-      />
+    <section className="flex min-h-screen p-8 flex-col-reverse justify-between">
+        <div className="flex justify-center">
+          <SideNavBar
+            handleView={handleView}
+            viewToShow={viewToShow}
+          />
+        </div>
 
-      <section className="col-span-11">
-        {
-          viewToShow === 0 ? (<Dashboard />)
-            : viewToShow === 1 ? (<Incomes />)
-              : (<Payments />)
-        }
-      </section>
+        <div className="">
+          {
+            viewToShow === 0 ? (<Dashboard />)
+              : viewToShow === 1 ? (<Incomes />)
+                : (<Payments />)
+          }
+        </div>
     </section>
   )
 }

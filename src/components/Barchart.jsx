@@ -45,7 +45,7 @@ const Barchart = () => {
 
     return (
         <div>
-            <canvas id="myChart" height='120'></canvas>
+            <canvas id="myChart" height='100'></canvas>
         </div>
     )
 }

@@ -10,7 +10,7 @@ const SideNavBar = ({ handleView, viewToShow }) => {
 
     return (
 
-        <ul id='navbar' className="fixed border border-slate-600 rounded-full shadow-xl flex">
+        <ul id='navbar' className="flex border border-slate-600 rounded-full shadow-xl">
             {
                 listItem.map((item, index) => (
                     <li key={index}>
@@ -18,7 +18,7 @@ const SideNavBar = ({ handleView, viewToShow }) => {
                             className={
                                 `p-4 hover:bg-gray-200 active:bg-gray-300 
                                     ${viewToShow === index ? 'bg-gray-300' : ''} 
-                                    ${index === 0 ? 'rounded-t-full' : index === 2 ? 'rounded-b-full' : ''}`
+                                    ${index === 0 ? 'rounded-s-full' : index === 2 ? 'rounded-e-full' : ''}`
                             }
                             onClick={() => handleView(index)}
                         >
